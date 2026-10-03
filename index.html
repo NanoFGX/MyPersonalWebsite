@@ -1,0 +1,341 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>Zakaria Bin Ali · DevOps, SOC and Software Engineering</title>
+    <meta name="description" content="Portfolio of Zakaria Bin Ali, final-year Computer Science student at Universiti Putra Malaysia seeking a DevOps, Cybersecurity (SOC) or Software Development internship from March 2027." />
+    <meta name="theme-color" content="#0b0d10" />
+    <meta name="color-scheme" content="dark" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Zakaria Bin Ali · DevOps, SOC and Software Engineering" />
+    <meta property="og:description" content="Builds, ships and defends software. Projects, SOC lab work, awards and experience." />
+    <meta name="twitter:card" content="summary" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Zakaria Bin Ali",
+        "jobTitle": "Computer Science student",
+        "alumniOf": "Universiti Putra Malaysia",
+        "email": "mailto:zakariaali0408@gmail.com",
+        "sameAs": ["https://www.linkedin.com/in/zakaria-ali-955810282/", "https://github.com/NanoFGX"]
+      }
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to content</a>
+
+    <div class="boot" id="boot" aria-hidden="true">
+      <pre class="boot__log mono" id="boot-log"></pre>
+    </div>
+
+    <canvas class="stage" id="stage" aria-hidden="true"></canvas>
+    <div class="stage-vignette" aria-hidden="true"></div>
+
+    <header class="nav" id="nav">
+      <div class="nav__inner">
+        <a class="nav__brand mono" href="#top" aria-label="Zakaria Bin Ali, back to top">
+          <img src="/favicon.svg" alt="" width="22" height="22" />
+          <span>zakaria<span class="nav__brand-dim">.sys</span></span>
+        </a>
+        <span class="status mono" title="Open to a 6-month internship from March 2027">
+          <span class="status__dot" aria-hidden="true"></span>
+          <span class="status__text">Open to internships · Mar 2027</span>
+        </span>
+        <nav class="nav__links" aria-label="Sections">
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#soc">SOC</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <div class="nav__actions">
+          <button class="kbd-btn" type="button" data-open-palette aria-label="Open command palette (Ctrl K)">
+            {{icon:magnifying-glass}}<kbd class="mono" data-mod-key>Ctrl K</kbd>
+          </button>
+          <button class="btn btn--ghost btn--sm nav__recruiter" type="button" data-open-recruiter>{{icon:user-focus}}<span>Recruiter view</span></button>
+          <button class="nav__menu-btn" type="button" aria-expanded="false" aria-controls="mobile-menu" id="menu-btn" aria-label="Open menu">
+            {{icon:list|icon--menu}}{{icon:x|icon--close}}
+          </button>
+        </div>
+      </div>
+      <div class="mobile-menu" id="mobile-menu" hidden>
+        <nav aria-label="Sections (mobile)">
+          <a href="#about">About</a>
+          <a href="#stack">Stack</a>
+          <a href="#soc">SOC</a>
+          <a href="#work">Work</a>
+          <a href="#experience">Experience</a>
+          <a href="#awards">Awards</a>
+          <a href="#terminal">Terminal</a>
+          <a href="#contact">Contact</a>
+        </nav>
+        <button class="btn btn--primary" type="button" data-open-recruiter>{{icon:user-focus}}<span>Recruiter view</span></button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero section" id="top" data-shape="globe" data-pose="0.42,0,0.66,1,0" data-pose-mobile="0,0.34,0.44,0.85,0">
+        <div class="wrap hero__grid">
+          <div class="hero__copy">
+            <h1 class="hero__title">
+              <span class="hero__name" data-hero-line>Zakaria Bin Ali</span>
+              <span class="hero__claim" data-hero-line>builds, ships and defends software.</span>
+            </h1>
+            <p class="hero__sub" data-hero-line>Final-year Computer Science student at UPM. Looking for a DevOps, SOC or software internship from March 2027.</p>
+            <div class="hero__ctas" data-hero-line>
+              <a class="btn btn--primary" href="#work">{{icon:arrow-down}}<span>View work</span></a>
+              <button class="btn btn--ghost" type="button" data-open-recruiter>{{icon:user-focus}}<span>Recruiter view</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about" data-shape="monogram" data-pose="-0.5,0.05,0.4,0.9,0" data-pose-mobile="0,0.55,0.26,0.35,0" aria-labelledby="about-title">
+        <div class="wrap about__grid">
+          <div class="about__copy">
+            <h2 class="h2" id="about-title" data-reveal>I like systems that real people depend on.</h2>
+            <p class="lead" data-reveal><!--@summary--></p>
+            <p data-reveal>
+              My work runs on three tracks. I build full-stack and AI products, often in 24-hour hackathons. I ship and run them on Vercel,
+              Supabase and Firebase. And I train as a blue teamer with Wazuh, MITRE ATT&amp;CK and capture-the-flag challenges.
+            </p>
+            <div class="about__cols">
+              <div data-reveal>
+                <h3 class="h3">Education</h3>
+                <ol class="edu"><!--@education--></ol>
+              </div>
+              <div data-reveal>
+                <h3 class="h3">Languages</h3>
+                <ul class="lang"><!--@languages--></ul>
+              </div>
+            </div>
+          </div>
+          <aside class="panel about__panel" data-reveal aria-label="Key facts">
+            <div class="panel__bar mono"><span>status.log</span><span class="panel__bar-dim">read-only</span></div>
+            <!--@telemetry-->
+          </aside>
+        </div>
+      </section>
+
+      <section class="stack section" id="stack" data-shape="racks" data-pose="0.5,0,0.5,0.75,0.2" data-pose-mobile="0,0.5,0.3,0.25,0.2" aria-labelledby="stack-title">
+        <div class="wrap">
+          <div class="stack__intro">
+            <h2 class="h2" id="stack-title" data-reveal>Technology I have shipped with.</h2>
+            <p class="section-sub" data-reveal>Grouped the way I use it. Every tool here appears in a project, a lab or a certification below.</p>
+          </div>
+          <div class="stack__body" data-reveal><!--@stack--></div>
+        </div>
+      </section>
+
+      <section class="soc section" id="soc" data-shape="shield" data-pose="0.56,0.2,0.46,0.55,0" data-pose-mobile="0,0.55,0.3,0.25,0" aria-labelledby="soc-title">
+        <div class="wrap">
+          <div class="soc__intro">
+            <h2 class="h2" id="soc-title" data-reveal>Attack it. Then catch it.</h2>
+            <p class="section-sub" data-reveal>SOC Analyst Labs, BlackBerry SOC Analyst and Security Manager programme with MCMC and the BlackBerry Cybersecurity Centre of Excellence, Aug 2026.</p>
+          </div>
+          <div class="soc__grid">
+            <div class="soc__copy">
+              <ul class="ticks" data-reveal><!--@soc-points--></ul>
+              <h3 class="h3" data-reveal>Techniques mapped to the lab work</h3>
+              <ul class="techniques" data-reveal><!--@soc-techniques--></ul>
+              <h3 class="h3" data-reveal>Tools</h3>
+              <ul class="tags" data-reveal><!--@soc-tools--></ul>
+            </div>
+            <div class="console" data-reveal>
+              <div class="console__bar mono">
+                <span class="console__title">{{icon:shield-check}}wazuh-manager / alerts</span>
+                <span class="console__live" id="feed-state"><span class="status__dot" aria-hidden="true"></span>Simulated live feed</span>
+                <button class="console__btn" type="button" id="feed-toggle" aria-pressed="false" aria-label="Pause alert feed">{{icon:pause|icon--pause}}{{icon:play|icon--play}}</button>
+              </div>
+              <div class="console__head mono" aria-hidden="true"><span>time</span><span>lvl</span><span>rule</span><span>agent</span><span>event</span></div>
+              <ol class="console__feed mono" id="feed" aria-live="off"></ol>
+              <p class="console__note">Simulated stream modelled on my lab scenarios, not real telemetry. Click a technique ID to open it in MITRE ATT&amp;CK.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="work section" id="work" data-shape="helix" data-pose="0,0,0.42,0.28,0.1" data-pose-mobile="0,0,0.3,0.2,0.1" aria-labelledby="work-title">
+        <div class="wrap">
+          <div class="work__intro">
+            <h2 class="h2" id="work-title" data-reveal>Selected work.</h2>
+            <div class="chips" role="group" aria-label="Filter projects by track" data-reveal><!--@filters--></div>
+          </div>
+          <ul class="cases" id="cases"><!--@projects--></ul>
+          <p class="cases__empty" id="cases-empty" hidden>No featured projects in this track. Open “More projects” below.</p>
+          <div class="more">
+            <button class="more__toggle" type="button" aria-expanded="false" aria-controls="more-panel" id="more-toggle">
+              <span>More projects</span><span class="more__count mono" id="more-count"></span>{{icon:caret-down}}
+            </button>
+            <div class="more__panel" id="more-panel" hidden>
+              <ul class="minis"><!--@more-projects--></ul>
+            </div>
+            <a class="text-link" href="https://github.com/NanoFGX?tab=repositories" target="_blank" rel="noopener">{{icon:github-logo}}<span>All repositories on GitHub</span>{{icon:arrow-up-right|icon--sm}}</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="experience section" id="experience" data-shape="terrain" data-pose="0,-0.42,0.75,0.62,0.42" data-pose-mobile="0,-0.5,0.5,0.3,0.42" aria-labelledby="exp-title">
+        <div class="wrap exp__grid">
+          <div class="exp__intro">
+            <h2 class="h2" id="exp-title" data-reveal>Experience and community.</h2>
+            <p class="section-sub" data-reveal>Shipping for real users, leading teams of volunteers and giving time back.</p>
+          </div>
+          <div class="tabs exp__tabs" data-tabs data-reveal>
+            <div class="tabs__list" role="tablist" aria-label="Experience categories">
+              <button class="tabs__tab" role="tab" id="exp-tab-work" aria-controls="exp-panel-work" aria-selected="true">{{icon:briefcase}}Experience</button>
+              <button class="tabs__tab" role="tab" id="exp-tab-lead" aria-controls="exp-panel-lead" aria-selected="false" tabindex="-1">{{icon:users-three}}Leadership</button>
+              <button class="tabs__tab" role="tab" id="exp-tab-vol" aria-controls="exp-panel-vol" aria-selected="false" tabindex="-1">{{icon:hand-heart}}Volunteering &amp; events</button>
+            </div>
+            <div role="tabpanel" id="exp-panel-work" aria-labelledby="exp-tab-work" tabindex="0"><ol class="tl"><!--@exp-work--></ol></div>
+            <div role="tabpanel" id="exp-panel-lead" aria-labelledby="exp-tab-lead" tabindex="0" hidden><ol class="tl"><!--@exp-leadership--></ol></div>
+            <div role="tabpanel" id="exp-panel-vol" aria-labelledby="exp-tab-vol" tabindex="0" hidden><ol class="tl"><!--@exp-volunteering--></ol></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="awards section" id="awards" data-shape="medal" data-pose="0.52,0.18,0.42,0.6,0" data-pose-mobile="0,0.6,0.26,0.25,0" aria-labelledby="awards-title">
+        <div class="wrap">
+          <h2 class="h2" id="awards-title" data-reveal>Awards and rankings.</h2>
+          <ul class="awards__grid"><!--@awards--></ul>
+          <p class="awards__also" data-reveal><!--@also-competed--></p>
+          <div class="certs" data-reveal>
+            <h2 class="h2 h2--sub">Certifications.</h2>
+            <div class="certs__groups"><!--@certs--></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="terminal-section section" id="terminal" data-shape="lattice" data-pose="-0.55,0,0.42,0.6,0.3" data-pose-mobile="0,0.62,0.22,0.2,0.3" aria-labelledby="term-title">
+        <div class="wrap term__grid">
+          <div class="term__intro">
+            <h2 class="h2" id="term-title" data-reveal>Or ask the shell.</h2>
+            <p class="section-sub" data-reveal>A working terminal with tab completion and history. Start with <code>help</code>, or try <code>whoami</code>, <code>projects</code> and <code>sudo hire-me</code>.</p>
+          </div>
+          <div class="term" id="term" data-reveal>
+            <div class="term__bar mono">
+              <span class="term__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+              <span>guest@zakaria.sys: ~</span>
+            </div>
+            <div class="term__screen mono" id="term-screen" role="log" aria-live="polite" aria-label="Terminal output"></div>
+            <form class="term__form mono" id="term-form" autocomplete="off">
+              <label class="term__prompt" for="term-input">guest@zakaria.sys:~$</label>
+              <input class="term__input" id="term-input" type="text" spellcheck="false" autocapitalize="off" aria-label="Terminal command" />
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact" data-shape="portal" data-pose="0.48,0,0.6,1,0" data-pose-mobile="0,0.45,0.42,0.6,0" aria-labelledby="contact-title">
+        <div class="wrap contact__grid">
+          <div class="contact__copy">
+            <h2 class="contact__title" id="contact-title" data-reveal>Let’s talk about your team.</h2>
+            <p class="lead" data-reveal>Available for a six-month internship from March 2027. I reply fastest on LinkedIn and email.</p>
+            <ul class="contact__list" data-reveal>
+              <li>
+                <a class="contact__row" href="https://www.linkedin.com/in/zakaria-ali-955810282/" target="_blank" rel="noopener">
+                  {{icon:linkedin-logo|icon--lg}}
+                  <span class="contact__label">LinkedIn</span>
+                  <span class="contact__value">in/zakaria-ali-955810282</span>
+                  {{icon:arrow-up-right}}
+                </a>
+              </li>
+              <li>
+                <div class="contact__row contact__row--split">
+                  <a class="contact__main" href="mailto:zakariaali0408@gmail.com">
+                    {{icon:envelope-simple|icon--lg}}
+                    <span class="contact__label">Email</span>
+                    <span class="contact__value">zakariaali0408@gmail.com</span>
+                  </a>
+                  <button class="copy-btn" type="button" data-copy="zakariaali0408@gmail.com" aria-label="Copy email address">{{icon:copy|icon--copy}}{{icon:check|icon--check}}<span>Copy</span></button>
+                </div>
+              </li>
+              <li>
+                <a class="contact__row" href="https://github.com/NanoFGX" target="_blank" rel="noopener">
+                  {{icon:github-logo|icon--lg}}
+                  <span class="contact__label">GitHub</span>
+                  <span class="contact__value">github.com/NanoFGX</span>
+                  {{icon:arrow-up-right}}
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="wrap footer__inner">
+        <p>Designed and built with Claude Code. Three.js, GSAP and Vite, deployed by GitHub Actions.</p>
+        <p class="mono">&copy; <span id="year">2026</span> Zakaria Bin Ali</p>
+      </div>
+    </footer>
+
+    <!-- Command palette -->
+    <div class="palette" id="palette" role="dialog" aria-modal="true" aria-label="Command palette" hidden>
+      <div class="palette__scrim" data-close-palette></div>
+      <div class="palette__box">
+        <div class="palette__search">
+          {{icon:magnifying-glass}}
+          <input id="palette-input" type="text" role="combobox" aria-expanded="true" aria-controls="palette-list" aria-autocomplete="list" placeholder="Jump to a section, project or link" autocomplete="off" spellcheck="false" />
+          <kbd class="mono">esc</kbd>
+        </div>
+        <ul class="palette__list" id="palette-list" role="listbox" aria-label="Commands"></ul>
+        <div class="palette__foot mono"><span><kbd>↑</kbd><kbd>↓</kbd> move</span><span><kbd>↵</kbd> open</span></div>
+      </div>
+    </div>
+
+    <!-- Recruiter quick view -->
+    <div class="drawer" id="recruiter" role="dialog" aria-modal="true" aria-labelledby="rv-title" hidden>
+      <div class="drawer__scrim" data-close-recruiter></div>
+      <aside class="drawer__panel" tabindex="-1">
+        <div class="drawer__bar">
+          <span class="mono drawer__kicker">30-second summary</span>
+          <button class="icon-btn" type="button" data-close-recruiter aria-label="Close summary">{{icon:x}}</button>
+        </div>
+        <div class="rv" id="rv">
+          <h2 class="rv__name" id="rv-title">Zakaria Bin Ali</h2>
+          <p class="rv__role">Internship candidate: DevOps, Cybersecurity (SOC), Software Development</p>
+          <dl class="rv__facts">
+            <div><dt>Available</dt><dd>6 months from March 2027</dd></div>
+            <div><dt>Education</dt><dd>BSc Computer Science (Hons), UPM, CGPA 3.84, PNB Merdeka Scholar</dd></div>
+            <div><dt>Location</dt><dd>Seri Kembangan, Selangor, Malaysia</dd></div>
+          </dl>
+          <h3 class="rv__h">Highlights</h3>
+          <ul class="rv__list">
+            <li>Led three developers on a Next.js and Supabase event platform used by <strong>311 participants</strong> over two weeks of live use.</li>
+            <li>Built the FastAPI backend and XGBoost/LightGBM models for <strong>FraudShield</strong>, scoring payments in under 50 ms.</li>
+            <li>BlackBerry SOC labs: emulated MITRE ATT&amp;CK techniques with Atomic Red Team and traced them in <strong>Wazuh</strong>.</li>
+            <li><strong>1st Runner-Up</strong>, Etiqa AI Talent Bootcamp 2026, plus <strong>two Silver awards</strong> for NextInsurance.</li>
+          </ul>
+          <h3 class="rv__h">Core skills</h3>
+          <dl class="rv__skills">
+            <div><dt>Languages</dt><dd>Java, Python, JavaScript, TypeScript, SQL</dd></div>
+            <div><dt>DevOps</dt><dd>Git, GitHub Actions, Vercel, Firebase, Supabase, Linux, AWS (in progress)</dd></div>
+            <div><dt>Security</dt><dd>Wazuh, MITRE ATT&amp;CK, Atomic Red Team, Wireshark, Kali, log and PCAP analysis</dd></div>
+            <div><dt>Frameworks</dt><dd>Spring Boot, FastAPI, Next.js, React, React Native, Flutter</dd></div>
+          </dl>
+          <h3 class="rv__h">Certifications</h3>
+          <p class="rv__certs">BlackBerry SOC Analyst and Security Manager, Google Cybersecurity, Palo Alto Security Operations and Cloud Security Fundamentals, TryHackMe Cyber Security 101, Certified Blue Teamer. AWS Solutions Architect Associate in progress.</p>
+          <p class="rv__contact mono">zakariaali0408@gmail.com · linkedin.com/in/zakaria-ali-955810282 · github.com/NanoFGX</p>
+        </div>
+        <div class="drawer__actions">
+          <a class="btn btn--primary" href="https://www.linkedin.com/in/zakaria-ali-955810282/" target="_blank" rel="noopener">{{icon:linkedin-logo}}<span>Message on LinkedIn</span></a>
+          <a class="btn btn--ghost" href="mailto:zakariaali0408@gmail.com">{{icon:envelope-simple}}<span>Email</span></a>
+          <a class="btn btn--ghost" href="cv/Zakaria_Bin_Ali_CV.pdf" download data-cv-link hidden>{{icon:file-pdf}}<span>Download CV</span></a>
+          <button class="btn btn--ghost" type="button" data-print>{{icon:printer}}<span>Print summary</span></button>
+        </div>
+      </aside>
+    </div>
+
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+    <noscript><style>.boot{display:none}[data-reveal],[data-reveal-item],[data-hero-line]{opacity:1!important;transform:none!important}.case__body[hidden],.more__panel[hidden]{display:block!important}</style></noscript>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
