@@ -1,0 +1,28 @@
+{
+  "schema": 1,
+  "source": "DESIGN.md",
+  "motion": {
+    "easeOut": "cubic-bezier(0.23, 1, 0.32, 1)",
+    "easeInOut": "cubic-bezier(0.77, 0, 0.175, 1)",
+    "easeDrawer": "cubic-bezier(0.32, 0.72, 0, 1)",
+    "press": { "transform": "scale(0.97)", "duration": "160ms" },
+    "reveal": { "from": { "opacity": 0.18, "translateY": "16px" }, "duration": "700ms opacity / 900ms transform", "stagger": "70ms" },
+    "accordion": { "open": "420ms expo.out", "close": "260ms power2.out" },
+    "drawer": { "open": "420ms easeDrawer", "close": "240ms" },
+    "palette": "none (keyboard tool)",
+    "scene": {
+      "morph": "scroll-scrubbed, per-particle stagger up to 45% of progress, smoothstep, outward burst 0.55 at midpoint",
+      "spin": "0.09 rad/s for volumetric shapes; flat shapes sway +/-0.38 rad",
+      "pointer": "damped tilt, x 0.35 rad, y 0.18 rad",
+      "reducedMotion": "no spin, no burst, no shimmer; morph snaps at 50%"
+    }
+  },
+  "shadows": {
+    "floating": "0 30px 80px -30px rgba(0, 0, 0, 0.7)",
+    "palette": "0 40px 100px -20px rgba(0, 0, 0, 0.8)",
+    "drawer": "-40px 0 100px -30px rgba(0, 0, 0, 0.8)"
+  },
+  "backdrop": { "panel": "blur(10px)", "nav": "blur(14px) saturate(140%)" },
+  "focus": { "outline": "2px solid #f5b03c", "offset": "3px" },
+  "zIndex": { "stage": 0, "content": 1, "nav": 20, "overlay": 40, "toast": 50, "boot": 60 }
+}
