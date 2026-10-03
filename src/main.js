@@ -86,7 +86,10 @@ async function initStage() {
     $('#hud-section').textContent = sections[i].id === 'top' ? 'hero' : sections[i].id;
   };
   setHud(0);
-  hud.classList.add('is-on');
+  // Only over the hero, where the right half is reserved for the scene; elsewhere it would sit on content.
+  new IntersectionObserver(([e]) => hud.classList.toggle('is-on', e.intersectionRatio > 0.55), {
+    threshold: [0, 0.55, 1],
+  }).observe(sections[0]);
 
   // Each section morphs the cloud from the previous shape as it scrolls into view.
   sections.forEach((sec, i) => {
@@ -171,7 +174,7 @@ function initReveals() {
         io.unobserve(entry.target);
       });
     },
-    { rootMargin: '0px 0px -8% 0px', threshold: 0.08 }
+    { rootMargin: '0px', threshold: 0.01 }
   );
   $$('[data-reveal]').forEach((el) => {
     // Stagger siblings that reveal together.
