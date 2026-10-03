@@ -654,6 +654,60 @@ kbd {
   gap: 48px var(--gutter);
   align-items: start;
 }
+.idcard {
+  grid-column: 1 / span 4;
+  grid-row: 1 / span 2;
+  position: sticky;
+  top: calc(var(--nav-h) + 32px);
+  margin: 0;
+  overflow: hidden;
+  box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7);
+}
+.idcard__frame {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  overflow: hidden;
+  background: var(--panel-solid);
+}
+.idcard__frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+  filter: saturate(0.82) contrast(1.02);
+  transform: scale(1.02);
+  transition: filter 600ms var(--ease-out), transform 900ms var(--ease-out);
+}
+/* Fade the photo's lower edge into the panel so it sits in the console rather than on it. */
+.idcard__frame::after {
+  content: '';
+  position: absolute;
+  inset: 55% 0 0;
+  background: linear-gradient(to bottom, transparent, rgba(19, 23, 29, 0.92));
+  pointer-events: none;
+}
+@media (hover: hover) and (pointer: fine) {
+  .idcard:hover .idcard__frame img {
+    filter: saturate(1) contrast(1.04);
+    transform: scale(1.045);
+  }
+}
+.idcard__cap {
+  position: relative;
+  display: grid;
+  gap: 4px;
+  margin-top: -64px;
+  padding: 0 18px 18px;
+}
+.idcard__name {
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+.idcard__meta {
+  font-size: 0.76rem;
+  color: var(--fg-2);
+}
 .about__copy {
   grid-column: 6 / span 7;
   display: grid;
@@ -1295,6 +1349,13 @@ kbd {
 .link-btn:hover {
   border-color: var(--accent-line);
   background: var(--accent-soft);
+}
+.link-btn--live {
+  border-color: var(--accent-line);
+  color: var(--accent);
+}
+.link-btn--live .icon {
+  color: var(--accent);
 }
 .link-btn:active {
   transform: scale(0.97);
@@ -2202,6 +2263,13 @@ kbd {
 }
 
 @media (max-width: 960px) {
+  .idcard {
+    position: relative;
+    top: 0;
+    grid-column: 1 / -1;
+    grid-row: auto;
+    width: min(100%, 360px);
+  }
   .hero__copy,
   .about__copy,
   .about__panel,

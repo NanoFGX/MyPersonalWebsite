@@ -40,4 +40,4 @@ The site is served under `/MyPersonalWebsite/`. For a custom domain, set `BASE_P
 ## Optional assets
 
 - **CV download:** add `public/cv/Zakaria_Bin_Ali_CV.pdf`. The Download CV button only appears once the file is deployed.
-- **Portrait photo:** not yet included.
+- **Portrait:** `public/images/zakaria-portrait.webp` (with a JPEG fallback), cropped and graded from the owner's photo.

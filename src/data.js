@@ -195,7 +195,10 @@ export const projects = [
     ],
     stack: ['siNextdotjs', 'siTypescript', 'siSupabase', 'siPostgresql', 'siVercel'],
     stackNames: 'Next.js, TypeScript, Supabase (PostgreSQL, Auth), Vercel, SMTP',
-    links: [{ label: 'Repository', href: 'https://github.com/Multilord/gog2026', icon: 'github' }],
+    links: [
+      { label: 'Live site', href: 'https://www.gameofgeeks2026.com/', icon: 'live' },
+      { label: 'Repository', href: 'https://github.com/Multilord/gog2026', icon: 'github' },
+    ],
   },
   {
     id: 'fraudshield',
@@ -249,7 +252,10 @@ export const projects = [
     ],
     stack: ['siNextdotjs', 'siTypescript', 'siTailwindcss', 'siClaude', 'siVercel'],
     stackNames: 'Next.js, TypeScript, Tailwind CSS, Claude AI, Vercel',
-    links: [{ label: 'Repository', href: 'https://github.com/NanoFGX/nextinsurance', icon: 'github' }],
+    links: [
+      { label: 'Live demo', href: 'https://nextinsurance-system.vercel.app/', icon: 'live' },
+      { label: 'Repository', href: 'https://github.com/NanoFGX/nextinsurance', icon: 'github' },
+    ],
   },
   {
     id: 'chainly',
@@ -266,7 +272,10 @@ export const projects = [
     ],
     stack: ['siPython', 'siFastapi', 'siSupabase', 'siClaude', 'siWhatsapp'],
     stackNames: 'Python, FastAPI, Supabase, Claude AI, WhatsApp, Lovable',
-    links: [{ label: 'Team repository', href: 'https://github.com/yang25-cell/chainly', icon: 'github' }],
+    links: [
+      { label: 'Live demo', href: 'https://pulseops-ai-flow.lovable.app/dashboard', icon: 'live' },
+      { label: 'Team repository', href: 'https://github.com/yang25-cell/chainly', icon: 'github' },
+    ],
   },
   {
     id: 'drivelens',
@@ -312,7 +321,10 @@ export const moreProjects = [
     tags: ['software'],
     text: 'Students log skill evidence, mentors score it, recruiters see a readiness score per role.',
     stack: 'React, TypeScript, Spring Boot',
-    links: [{ label: 'Repo', href: 'https://github.com/NanoFGX/competency-gap-tracker' }],
+    links: [
+      { label: 'Live', href: 'https://competency-gap-tracker-sprj.vercel.app/landing' },
+      { label: 'Repo', href: 'https://github.com/NanoFGX/competency-gap-tracker' },
+    ],
   },
   {
     name: 'DriveWise AI',
@@ -333,7 +345,7 @@ export const moreProjects = [
     tags: ['software', 'ai'],
     text: 'Plant recommendations and photo disease diagnosis, with unsure cases routed to an agronomist.',
     stack: 'React, FastAPI, MongoDB Atlas, Gemini',
-    links: [],
+    links: [{ label: 'Live', href: 'https://homegrowai.vercel.app/' }],
   },
   {
     name: 'MakanManoi',

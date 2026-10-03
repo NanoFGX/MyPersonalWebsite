@@ -31,7 +31,6 @@ Visitors scan on desktop first, mobile second. Many will want a 30-second summar
 - Contact only through LinkedIn (https://www.linkedin.com/in/zakaria-ali-955810282/), email (zakariaali0408@gmail.com) and GitHub (https://github.com/NanoFGX).
 - Phone number and referee contact details are not published.
 - Some repositories are private (HomeGrow AI) or have no repository (DriveLens, SOC labs); those get no code links.
-- Live URLs for NextInsurance and the Game of Geeks platform are not yet known.
 
 ## Brand Commitments
 
@@ -43,8 +42,8 @@ Visitors scan on desktop first, mobile second. Many will want a 30-second summar
 
 - `ZAKARIA_BIN_ALI__CV.pdf` (primary) and `Zakaria_Ali_CV_Semua.pdf` (extended) supplied by the owner.
 - Public repositories under github.com/NanoFGX plus contributor repositories Multilord/gog2026, Multilord/FraudSheildV2, yang25-cell/chainly.
-- Live demos: DriveWise AI (ai-smart-car-advisor-master.vercel.app), GEOFOODSEC (Streamlit Cloud).
-- No portrait photo yet; the owner may supply images later. No testimonials exist; none are to be invented.
+- Live demos: Game of Geeks (gameofgeeks2026.com), NextInsurance, Chainly (Lovable), Competency Gap Tracker, DriveWise AI, HomeGrow AI (Vercel), GEOFOODSEC (Streamlit Cloud).
+- Portrait supplied by the owner: `public/images/zakaria-portrait.(webp|jpg)`, cropped to the upper half and colour-graded to the palette. No testimonials exist; none are to be invented.
 
 ## Product Principles
 

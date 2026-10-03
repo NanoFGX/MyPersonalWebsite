@@ -38,7 +38,8 @@ export function logo(key, cls = 'logo') {
   return `<svg class="${cls}" style="--brand:${brand}" viewBox="0 0 24 24" role="img" aria-label="${esc(icon.title)}"><path fill="currentColor" d="${icon.path}"/></svg>`;
 }
 
-const linkIcon = (kind) => (kind === 'github' ? ph('github-logo') : kind === 'arrow' ? ph('arrow-down') : ph('arrow-up-right'));
+const linkIcon = (kind) =>
+  kind === 'github' ? ph('github-logo') : kind === 'arrow' ? ph('arrow-down') : kind === 'live' ? ph('globe-simple') : ph('arrow-up-right');
 
 function renderTelemetry() {
   const rows = telemetry
@@ -116,7 +117,7 @@ function renderProjects() {
       const links = p.links
         .map(
           (l) =>
-            `<a class="link-btn" href="${esc(l.href)}" ${l.href.startsWith('#') ? '' : 'target="_blank" rel="noopener"'}>${linkIcon(l.icon)}<span>${esc(l.label)}</span></a>`
+            `<a class="link-btn${l.icon === 'live' ? ' link-btn--live' : ''}" href="${esc(l.href)}" ${l.href.startsWith('#') ? '' : 'target="_blank" rel="noopener"'}>${linkIcon(l.icon)}<span>${esc(l.label)}</span></a>`
         )
         .join('');
       return `<li class="case" data-tags="${p.tags.join(' ')}" id="project-${p.id}" data-reveal-item>
