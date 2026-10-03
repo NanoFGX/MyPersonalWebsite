@@ -302,22 +302,6 @@ export const projects = [
     stackNames: 'React Native, Firebase, FastAPI, Tesseract OCR, OpenCV',
     links: [{ label: 'Repository', href: 'https://github.com/NanoFGX/MyCredentials_System', icon: 'github' }],
   },
-  {
-    id: 'skills',
-    name: 'Claude Code Skills Catalogue',
-    context: 'Personal project',
-    date: 'Jun 2026',
-    tags: ['devops', 'ai'],
-    metric: { value: '224', label: 'skills in 13 areas' },
-    blurb: 'A public catalogue of skills for the Claude Code AI coding assistant, covering security, DevOps and cloud.',
-    points: [
-      'Grouped 224 skills into 13 areas with a one-line description each.',
-      'Areas include security, DevOps and cloud.',
-    ],
-    stack: ['siClaude', 'siGithub'],
-    stackNames: 'Claude Code, Markdown, GitHub',
-    links: [{ label: 'Repository', href: 'https://github.com/NanoFGX/claude-skills', icon: 'github' }],
-  },
 ];
 
 export const moreProjects = [
@@ -371,15 +355,6 @@ export const moreProjects = [
       { label: 'Live', href: 'https://climate-emissions-crop-yield-ideynb6gsjxyvmieizojus.streamlit.app/' },
       { label: 'Repo', href: 'https://github.com/NanoFGX/GEOFOODSEC' },
     ],
-  },
-  {
-    name: 'KTDI Wi-Fi Channel Optimisation',
-    context: 'Algorithms project',
-    date: '2025',
-    tags: ['devops'],
-    text: 'Greedy graph colouring assigns Wi-Fi channels across 72-room blocks to cut interference.',
-    stack: 'Python, graph algorithms',
-    links: [{ label: 'Repo', href: 'https://github.com/NanoFGX/WifiChannelAllocater' }],
   },
   {
     name: 'Golden Meal',
