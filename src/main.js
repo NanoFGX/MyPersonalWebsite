@@ -75,6 +75,19 @@ async function initStage() {
   stage.morph(names[0], names[0], 0, sectionPoses[0], sectionPoses[0]);
   stage.start();
 
+  // HUD reports the real state of the scene: point count, current shape and section.
+  const hud = $('#hud');
+  $('#hud-count').textContent = `${stage.count.toLocaleString('en-US')} pts`;
+  let hudIndex = -1;
+  const setHud = (i) => {
+    if (i === hudIndex) return;
+    hudIndex = i;
+    $('#hud-shape').textContent = names[i];
+    $('#hud-section').textContent = sections[i].id === 'top' ? 'hero' : sections[i].id;
+  };
+  setHud(0);
+  hud.classList.add('is-on');
+
   // Each section morphs the cloud from the previous shape as it scrolls into view.
   sections.forEach((sec, i) => {
     if (i === 0) return;
@@ -86,8 +99,12 @@ async function initStage() {
       onUpdate: (self) => {
         const t = reduced ? (self.progress > 0.5 ? 1 : 0) : self.progress;
         stage.morph(names[i - 1], names[i], t, sectionPoses[i - 1], sectionPoses[i]);
+        setHud(t >= 0.5 ? i : i - 1);
       },
-      onLeaveBack: () => stage.morph(names[i - 1], names[i], 0, sectionPoses[i - 1], sectionPoses[i]),
+      onLeaveBack: () => {
+        stage.morph(names[i - 1], names[i], 0, sectionPoses[i - 1], sectionPoses[i]);
+        setHud(i - 1);
+      },
     });
   });
 }

@@ -184,9 +184,14 @@ export function initTerminal(actions) {
 
   printLines([
     '<span class="ok">zakaria.sys</span> <span class="dim">interactive shell</span>',
-    'Type <span class="acc">help</span> to list commands, or <span class="acc">whoami</span> to start.',
+    'Type <span class="acc">help</span> to list commands. Here is one already run for you:',
     '',
   ]);
+  print('<span class="p">guest@zakaria.sys:~$</span> whoami', 'cmd');
+  commands.whoami.run();
+  print('<span class="p">guest@zakaria.sys:~$</span> nmap', 'cmd');
+  commands.nmap.run();
+  print('');
 
   form.addEventListener('submit', (ev) => {
     ev.preventDefault();

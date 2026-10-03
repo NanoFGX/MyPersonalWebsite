@@ -196,8 +196,9 @@ function renderAwards() {
   return awards
     .map(
       (a, i) => `<li class="award award--${a.size}" data-reveal-item>
-        <span class="award__rank">${esc(a.rank)}</span>
+        ${a.size === 'xl' ? `<span class="award__rank">${esc(a.rank)}</span>` : ''}
         <span class="award__event">${esc(a.event)}</span>
+        ${a.size === 'xl' ? '' : `<span class="award__rank award__rank--tag">${esc(a.rank)}</span>`}
         <span class="award__note">${esc(a.note)}</span>
         ${i === 0 ? ph('trophy', 'icon award__icon') : ''}
       </li>`

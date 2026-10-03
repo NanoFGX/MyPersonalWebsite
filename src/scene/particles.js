@@ -229,6 +229,7 @@ export function createParticleScene(canvas, { shapes, reduced = false } = {}) {
   resize();
 
   return {
+    count,
     /** Morph between two named shapes at progress t (0..1), blending poses alongside. */
     morph(a, b, t, poseA, poseB) {
       setPair(a, b);
