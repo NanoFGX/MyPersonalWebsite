@@ -31,7 +31,7 @@ All content lives in `src/data.js`. Edit it and the page re-renders.
 
 ## Deploy
 
-`.github/workflows/deploy.yml` builds on every push and pull request, and deploys `main` to GitHub Pages.
+`.github/workflows/deploy.yml` builds on every push and pull request, and deploys the repository's default branch to GitHub Pages.
 
 One-time setup in the repository: **Settings > Pages > Build and deployment > Source: GitHub Actions**.
 
