@@ -86,6 +86,17 @@ async function initStage() {
     $('#hud-section').textContent = sections[i].id === 'top' ? 'hero' : sections[i].id;
   };
   setHud(0);
+
+  // Sections with data-anchor keep their shape pinned to an element (e.g. the slot under the portrait).
+  const anchors = sections.map((sec) => (sec.dataset.anchor ? sec.querySelector(sec.dataset.anchor) : null));
+  gsap.ticker.add(() => {
+    const el = anchors[hudIndex];
+    if (!el) return;
+    const r = el.getBoundingClientRect();
+    const w = window.innerWidth;
+    const h = window.innerHeight;
+    stage.setTargetXY((r.left + r.width / 2 - w / 2) / (w / 2), -(r.top + r.height / 2 - h / 2) / (h / 2));
+  });
   // Only over the hero, where the right half is reserved for the scene; elsewhere it would sit on content.
   new IntersectionObserver(([e]) => hud.classList.toggle('is-on', e.intersectionRatio > 0.55), {
     threshold: [0, 0.55, 1],

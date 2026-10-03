@@ -230,6 +230,11 @@ export function createParticleScene(canvas, { shapes, reduced = false } = {}) {
 
   return {
     count,
+    /** Override the target position (fractions of the half extents) for the current frame. */
+    setTargetXY(x, y) {
+      poseTarget.x = x;
+      poseTarget.y = y;
+    },
     /** Morph between two named shapes at progress t (0..1), blending poses alongside. */
     morph(a, b, t, poseA, poseB) {
       setPair(a, b);

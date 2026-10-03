@@ -654,11 +654,18 @@ kbd {
   gap: 48px var(--gutter);
   align-items: start;
 }
-.idcard {
+.about__side {
   grid-column: 1 / span 4;
   grid-row: 1 / span 2;
-  position: sticky;
-  top: calc(var(--nav-h) + 32px);
+  display: grid;
+  align-content: start;
+}
+/* Empty slot under the photo; the particle monogram is anchored to it so it never sits behind the photo. */
+.about__glyph {
+  height: clamp(200px, 30vh, 300px);
+}
+.idcard {
+  position: relative;
   margin: 0;
   overflow: hidden;
   box-shadow: 0 30px 80px -30px rgba(0, 0, 0, 0.7);
@@ -2263,12 +2270,13 @@ kbd {
 }
 
 @media (max-width: 960px) {
-  .idcard {
-    position: relative;
-    top: 0;
+  .about__side {
     grid-column: 1 / -1;
     grid-row: auto;
     width: min(100%, 360px);
+  }
+  .about__glyph {
+    height: 180px;
   }
   .hero__copy,
   .about__copy,
